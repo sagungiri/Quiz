@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz App</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="wrapper" class="hides">
+
+	<form name="login-form" class="login-form">
+	
+		<div class="header">
+		<h1>LOG IN HERE!</h1>
+		<span class="login-text">please fill out the form below to login to my awesome JavaScript Quiz.</span>
+		</div>
+	
+		<div class="content">
+		<input name="username" type="text" class="input username" placeholder="UserName" />
+		<input name="password" type="password" class="input password" placeholder="Password" />	
+		</div>
+
+		<div class="footer">
+		<input type="submit" name="submit" value="Login" class="input button" disabled="disabled" />
+		<a class="forget" href="#">forget password</a>
+		<p class="signup">Don't have account please go for <a href="#">Sign Up</a></p>
+		</div>
+	
+	</form>
+
+</div>
+<div class="quiz">
+	<div class="manage">
+	 <div id="questionsTime">
+    <div id="question">Question</div>
+    <div id="answer" class="btn-answer">
+      <button class="btn">Answer 1</button>
+      <button class="btn">Answer 2</button>
+      <button class="btn">Answer 3</button>
+      <button class="btn">Answer 4</button>
+    </div>
+  </div>
+  <div class="control">
+    <button id="next-btn" class="next-btn" disabled>Next</button>
+  </div>
+</div>
+</div>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
