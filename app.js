@@ -93,7 +93,7 @@ var questions = [
 ]
 
 const nextButton = document.getElementById('next-btn')
-const questionContainerElement = document.getElementById('quiz')
+const questionContainerElement = document.getElementById('questionsTime')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('btn')
 
@@ -132,7 +132,6 @@ function showQuestion(question) {
 
 function resetState() {
 	clearStatusClass(document.body)
-	nextButton.classList.add('hide')
 	while (answerButtonsElement.firstChild) {
 		answerButtonsElement.removeChild(answerButtonsElement.firstChild)
 	}
