@@ -143,6 +143,12 @@ body {
 .btn:hover {
   border:1px solid black;
 }
+.correct {
+	 background-color: #16f016;
+}
+.wrong {
+	background-color:rgb(255, 53, 8);
+}
 .control {
   display: flex;
   justify-content: center;
