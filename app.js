@@ -88,6 +88,6 @@ var questions = [
 			{ text: 'stairs', correct: true },
 		]
 	}
-
 ]
+
 
