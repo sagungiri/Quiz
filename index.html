@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div id="wrapper" class="hides">
+	<div id="wrapper">
 
 	<form name="login-form" class="login-form">
 	
@@ -15,12 +15,12 @@
 		</div>
 	
 		<div class="content">
-		<input name="username" type="text" class="input username" placeholder="UserName" />
-		<input name="password" type="password" class="input password" placeholder="Password" />	
+		<input name="username" type="text" class="input username" id="name" placeholder="UserName" />
+		<input name="password" type="password" class="input password" id="password" placeholder="Password" />	
 		</div>
 
 		<div class="footer">
-		<input type="submit" name="submit" value="Login" class="input button" disabled="disabled" />
+		<input type="button" name="submit" value="Login" class="input button" id="submit"/>
 		<a class="forget" href="#">forget password</a>
 		<p class="signup">Don't have account please go for <a href="#">Sign Up</a></p>
 		</div>
@@ -28,7 +28,7 @@
 	</form>
 
 </div>
-<div class="quiz">
+<div id="quiz" class="quiz hide">
 	<div class="manage">
 	 <div id="questionsTime">
     <div id="question">Question</div>
@@ -40,7 +40,7 @@
     </div>
   </div>
   <div class="control">
-    <button id="next-btn" class="next-btn" disabled>Next</button>
+    <button id="next-btn" class="next-btn" >Next</button>
   </div>
 </div>
 </div>
