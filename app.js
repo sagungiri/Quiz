@@ -92,13 +92,29 @@ var questions = [
 	}
 ]
 
+// var question = document.getElementById('question');
+// question.innerHTML = questions[0].question;
+
+// var answers = document.getElementById('answer');
+// var ansBtn = document.getElementById('ans1');
+
+// for (var i = 0; i < questions[0].answers.length; i++) {
+
+// 	ansBtn.innerHTML = questions[0].array.forEach(answers => {
+// 		ansBtn.innerHTML = 
+// 	});
+// }
+
+
+//console.log(questions[0].answers.length)
+
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('questionsTime')
 const questionElement = document.getElementById('question')
-const answerButtonsElement = document.getElementById('btn')
+const answerButtonsElement = document.getElementById('answer')
 
 let shuffledQuestions, currentQuestionIndex
-
+startGame();
 nextButton.addEventListener('click', () => {
 	currentQuestionIndex++
 	setNextQuestion()
@@ -132,6 +148,7 @@ function showQuestion(question) {
 
 function resetState() {
 	clearStatusClass(document.body)
+	nextButton.classList.add('hide')
 	while (answerButtonsElement.firstChild) {
 		answerButtonsElement.removeChild(answerButtonsElement.firstChild)
 	}
@@ -144,6 +161,9 @@ function selectAnswer(e) {
 	Array.from(answerButtonsElement.children).forEach(button => {
 		setStatusClass(button, button.dataset.correct)
 	})
+	if (shuffledQuestions.length > currentQuestionIndex + 1) {
+		nextButton.classList.remove('hide')
+	}
 }
 
 function setStatusClass(element, correct) {
@@ -159,4 +179,3 @@ function clearStatusClass(element) {
 	element.classList.remove('correct')
 	element.classList.remove('wrong')
 }
-
