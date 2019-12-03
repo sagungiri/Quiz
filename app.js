@@ -146,7 +146,7 @@ function showQuestion(question) {
 		button.addEventListener('click', selectAnswer)
 		answerButtonsElement.appendChild(button)
 
-		if (answer.correct == true) {
+		if (answer.correct === true) {
 			score += 5;
 			scoreText.innerText = "your current score is " + score;
 		}
