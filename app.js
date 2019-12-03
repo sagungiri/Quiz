@@ -98,12 +98,6 @@ var questions = [
 // var answers = document.getElementById('answer');
 // var ansBtn = document.getElementById('ans1');
 
-// for (var i = 0; i < questions[0].answers.length; i++) {
-
-// 	ansBtn.innerHTML = questions[0].array.forEach(answers => {
-// 		ansBtn.innerHTML = 
-// 	});
-// }
 
 
 //console.log(questions[0].answers.length)
