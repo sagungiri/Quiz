@@ -112,6 +112,8 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('questionsTime')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer')
+var scoreText = document.getElementById("score");
+var score = 0
 
 let shuffledQuestions, currentQuestionIndex
 startGame();
@@ -143,7 +145,13 @@ function showQuestion(question) {
 		}
 		button.addEventListener('click', selectAnswer)
 		answerButtonsElement.appendChild(button)
+
+		if (answer.correct == true) {
+			score += 5;
+			scoreText.innerText = "your current score is " + score;
+		}
 	})
+
 }
 
 function resetState() {
@@ -172,6 +180,7 @@ function setStatusClass(element, correct) {
 		element.classList.add('correct')
 	} else {
 		element.classList.add('wrong')
+
 	}
 }
 
@@ -179,3 +188,5 @@ function clearStatusClass(element) {
 	element.classList.remove('correct')
 	element.classList.remove('wrong')
 }
+
+

@@ -159,4 +159,10 @@ body {
   font-size: 1rem;
   padding: 10px 20px;
 }
+#score{
+	font-size: 25px;
+	color:#1f0245;
+	 padding: 50px;
+	 margin-left: 35%;
 
+}
