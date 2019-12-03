@@ -146,10 +146,10 @@ function showQuestion(question) {
 		button.addEventListener('click', selectAnswer)
 		answerButtonsElement.appendChild(button)
 
-		if (answer.correct === true) {
-			score += 5;
-			scoreText.innerText = "your current score is " + score;
-		}
+		// if (answer.correct === true) {
+		// 	score += 5;
+		// 	scoreText.innerText = "your current score is " + score;
+		// }
 	})
 
 }
